@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$=pef4@13(43ef1^3zhl)i060%y_0nm93w!eim$bhr@j(42oj%'
+SECRET_KEY = 'c!3ttl8hv%dujn*$e-(+=4jyk$hnwx#dqnax+co74i39vy5uon'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,11 +75,8 @@ WSGI_APPLICATION = 'djangoblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
