@@ -3,12 +3,14 @@ version: '3'
 services:
   db:
     image: postgres
+    ports:
+      - "5432:5432"
   web:
     build: .
-    command: ./entrypoint.sh
     volumes:
       - .:/code
     ports:
       - "8000:8000"
     depends_on:
       - db
+    command: ./entrypoint.sh

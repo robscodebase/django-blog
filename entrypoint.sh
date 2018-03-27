@@ -1,11 +1,6 @@
 #!/bin/bash
-python manage.py makemigrations blog
-# Collect static files
-#python manage.py collectstatic --noinput
 
-# Apply database migrations
-#python manage.py migrate
-
-# Start server
-#echo "Starting server"
-#python manage.py runserver 0.0.0.0:8000
+set -e
+sleep 5
+python3 manage.py migrate
+python3 manage.py runserver 0.0.0.0:8000
