@@ -32,3 +32,6 @@ You must have Docker and Docker-Compose installed on your machine.
 * Python3
 * Django
 * Postgres
+
+![Django-Blog Image 1](screenshots/django-blog-admin.png)
+![Django-Blog Image 2](screenshots/django-blog-login.png)
